@@ -12704,6 +12704,14 @@ li {
   font-family: 'Poppins', sans-serif;
 }
 
+#impressum {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+#impressum p {
+  font-family: 'Poppins', sans-serif;
+}
+
 #footer {
   background-color: #1d1d1d !important;
 }
