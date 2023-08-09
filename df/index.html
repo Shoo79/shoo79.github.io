@@ -14,7 +14,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
@@ -23,119 +23,127 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar">
+        <nav class="navbar navbar-light">
             <div class="container px-5">
                 <a class="navbar-brand logo" href="index.html">
                     <img src="assets/digitalfuchs_logo_2.svg" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
+                    aria-expanded="false" aria-label="Toggle navigation"
+                    style="border: none; background-color: transparent; outline: none;"><span
                         class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
+                <div class="collapse navbar-collapse modal-menu" id="navbarSupportedContent">
+                    <!-- Close button -->
+                    <span class="close-modal" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">&times;</span>
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- mx-auto centers the list -->
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Startseite</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
                         <li class="nav-item"><a class="nav-link" href="datenschutz.html">Datenschutz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impressum.html">Impressum</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5">
+        <header class="df-header-container">
             <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center">
-                    <div class="col-lg-12 col-xl-12 col-xxl-12">
-                        <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Die digitale Welt zusammen erfassen</h1>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" style="margin-top: 30px;"
-                                    href="#contact">Termin vereinbaren</a>
-                            </div>
-                        </div>
+                <div class="df-header-image-container">
+                    <img src="assets/694.jpg" alt="cta-image">
+                </div>
+                <div class="df-header-text-container text-center">
+                    <h1 class="display-5 text-black mb-2">Die digitale Welt <span>gemeinsam</span> verstehen</h1>
+                    <h2 class="display-5 df-header-text-subtitle">
+                        <span>Lass dir deine digitalen Geräte bei dir zuhause</span>
+                        <span>oder im Büro einrichten und erklären.</span>
+                    </h2>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3 mt-3" href="#contact">JETZT ANFRAGEN</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Leistungen -->
-        <section class="py-5" id="features">
-            <div class="container px-5 my-5">
+        <section class="py-5 df-features-section" id="features">
+            <div class="container px-5 mt-4">
                 <div class="row gx-5 mb-5">
                     <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h2 class="fw-bolder mb-0 text-center">Meine Leistungen</h2>
+                        <h1 class="df-features-main-title fw-bold mb-0 text-center">
+                            MEINE LEISTUNGEN</h1>
+                        <h2 class="fw-light mb-0 text-center df-features-subtitle">
+                            <span>Ich löse deine technischen Probleme und zeige dir die
+                                Möglichkeiten,</span>
+                            <span>die in deinen digitalen Geräten stecken.</span>
+                        </h2>
                     </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-md-4 mb-5 h-100 text-center">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                class="bi bi-phone"></i></div>
-                        <h2 class="h5">Digitale Endgeräte</h2>
-                        <ul class="list-unstyled">
-                            <li>Smartphone</li>
-                            <li>Tablet</li>
-                            <li>Notebook</li>
-                            <li>Computer</li>
-                            <li>Router</li>
-                            <li>Smart TV</li>
-                            <li>Smart Home</li>
-                            <li>Festnetztelefon</li>
-                            <li>Anrufbeantworter</li>
-                            <li>Spielkonsole</li>
-                            <li>& sämtliches Zubehör</li>
+                <div class="row gx-5">
+
+                    <!-- First Column - Digitale Endgeräte -->
+                    <div class="col-md-4 mb-1 h-100">
+                        <h1 class="df-features-digital-title">Digitale Geräte</h1>
+                        <ul class="list-unstyled df-features-tech-list">
+                            <li>Smartphone und Tablet</li>
+                            <li>Notebook und Computer</li>
+                            <li>Netzwerk, Router und Telefonie</li>
+                            <li>Smart TV und Smart Home</li>
+                            <li>Audiosysteme</li>
+                            <li>Sämtliches Zubehör</li>
                         </ul>
                     </div>
-                    <div class="col-md-4 mb-5 h-100 text-center">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                class="bi bi-wrench"></i></div>
-                        <h2 class="h5">Technischer Support</h2>
-                        <ul class="list-unstyled">
-                            <li>Geräteeinrichtung</li>
-                            <li>Gerätekompatibilität</li>
-                            <li>Datenübertragung</li>
-                            <li>Updates</li>
-                            <li>Backups</li>
-                            <li>WLAN</li>
-                            <li>LAN</li>
-                            <li>Internetanschluss</li>
-                            <li>Netzwerktechnik</li>
-                            <li>Festnetz</li>
-                            <li>Mobilfunk</li>
-                        </ul>
+
+                    <!-- Second and Third Columns - Technischer Support + Service List -->
+                    <div class="col-md-8 mb-1 h-100">
+                        <h1 class="df-features-digital-title">Service: Einrichtung und Erklärung</h1>
+
+                        <div class="row">
+                            <!-- Technischer Support -->
+                            <div class="col-md-6 mb-1 h-100">
+                                <ul class="list-unstyled df-features-tech-list">
+                                    <li>Software-Updates</li>
+                                    <li>Datenübertragung</li>
+                                    <li>Datensicherung</li>
+                                    <li>Einrichtung E-Mail</li>
+                                    <li>Einrichtung Drucker</li>
+                                    <li>Einrichtung Benutzerkonten <span>(z.B. iOS,
+                                            Android)</span></li>
+                                    <li>Einrichtung Streaming-Konten</li>
+                                    <li>Netzwerkoptimierung <span>(z.B. mit PowerLAN
+                                            oder Repeatern)</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Service List -->
+                            <div class="col-md-6 mb-1 h-100">
+                                <ul class="list-unstyled df-features-tech-list">
+                                    <li>Netzwerkspeicher und Cloud</li>
+                                    <li>Absicherung WLAN <span>(z.B. Mac-Filterung,
+                                            Kindersicherung, Gast-WLAN)</span></li>
+                                    <li>Verbindung internetfähiger Geräte <span>(z.B. Smart-TV, Tablet, Laptop)</span>
+                                    </li>
+                                    <li>Anbindung Zubehör <span>(z.B. Headset, Smart
+                                            Watch, Audio-Schnitstellen)</span></li>
+                                    <li>Anbindung Smart Home-Komponenten <span>(z.B.
+                                            Hue Bridge, Thermostate, smarte Steckdosen)</span></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-5 h-100 text-center">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                class="bi bi-life-preserver"></i></div>
-                        <h2 class="h5">Service</h2>
-                        <ul class="list-unstyled">
-                            <li>&nbsp;</li>
-                            <li style="font-weight: bold;">von digitalfuchs</li>
-                            <li>Beratung</li>
-                            <li>Schulung</li>
-                            <li>Lösung</li>
-                            <li>&nbsp;</li>
-                            <li style="font-weight: bold;">für den User</li>
-                            <li>Unterstützung</li>
-                            <li>Erklärung</li>
-                            <li>Verständnis</li>
-                        </ul>
+                    <div class="mt-5 d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3 mt-3" href="#contact">JETZT ANFRAGEN</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" style="margin-top: 30px;" href="#contact">Termin
-                            vereinbaren</a>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- About section-->
-        <div class="py-5" style="background-color: #d9d9d9;" id="about">
+        <div class="py-5" style="background-color: #fff;" id="about">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Das bin ich</h1>
-                            <h2 class="h3 text-white">Fabian</h2>
-                            <p class="lead fw-normal text-white mb-4">Fasziniert von der Elektrotechnik habe ich schon
+                            <h1 class="display-5 fw-bolder text-black mb-2">Das bin ich</h1>
+                            <h2 class="h3 text-black">Fabian</h2>
+                            <p class="lead fw-normal text-black mb-4">Fasziniert von der Elektrotechnik habe ich schon
                                 früh eine Affinität zur digitalen Welt entwickelt. Durch meine jahrelange Expertise
                                 helfe ich meinen Kunden die alltägliche digitale Welt zu verstehen und biete ihnen
                                 technischen Support für den digitalen Alltag.</p>

@@ -12678,6 +12678,7 @@ header.bg-dark {
 #features ul,
 li {
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 5px;
 }
 
 #features .btn-primary {
@@ -12700,7 +12701,9 @@ li {
   font-family: 'Advent Pro', sans-serif;
 }
 
-#contact label, textarea, input {
+#contact label,
+textarea,
+input {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -12732,4 +12735,128 @@ li {
 .carousel:hover .carousel-control-prev,
 .carousel:hover .carousel-control-next {
   opacity: 1;
+}
+
+.modal-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal-menu.show {
+  opacity: 1;
+}
+
+.modal-menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.modal-menu a.nav-link {
+  color: white !important;
+  padding: 10px 20px;
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.modal-menu a.nav-link:hover {
+  color: #D9D9D9 !important;
+}
+
+.modal-menu .active a.nav-link {
+  color: #0080B7 !important;
+  /* blue color for the active item */
+}
+
+.close-modal {
+  color: white;
+  /* Color of the X */
+  font-size: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  line-height: 1;
+  padding: 0 15px;
+  /* Adding horizontal padding */
+}
+
+.df-header-container {
+  background-color: #fff;
+  padding-bottom: 3em;
+}
+
+.df-header-image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  max-width: 100%;
+}
+
+.df-header-text-container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.df-header-text-container h1 span {
+  color: #0080B7;
+}
+
+.df-header-text-subtitle {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.df-header-text-subtitle span {
+  display: block;
+}
+
+.df-features-section {
+  background-color: #d9d9d9;
+  padding-top: 1rem !important;
+}
+
+.df-features-main-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 100 !important;
+  letter-spacing: 5px;
+  color: #0080B7;
+  padding-bottom: 1rem;
+}
+
+.df-features-subtitle {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.2rem;
+}
+
+.df-features-subtitle span {
+  display: block;
+}
+
+.df-features-digital-title {
+  text-align: left !important;
+  font-family: 'Advent Pro', sans-serif !important;
+  font-weight: 500 !important;
+  color: #0080B7;
+  font-size: 1.5rem;
+}
+
+.df-features-tech-list span {
+  font-size: smaller;
+  display: block;
 }
