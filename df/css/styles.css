@@ -12686,15 +12686,18 @@ li {
 }
 
 #about {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+#about h1 {
+  color: #0080B7 !important;
+  letter-spacing: 5px;
+  font-weight: 100 !important;
 }
 
 #about p {
   font-family: 'Poppins', sans-serif;
-}
-
-#testimonial {
-  font-family: 'Advent Pro', sans-serif;
+  font-size: 1.2rem;
 }
 
 #contact {
@@ -12718,23 +12721,6 @@ input {
 #footer {
   background-color: #1d1d1d !important;
   font-family: 'Advent Pro', sans-serif !important;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  color: black;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
-  opacity: 1;
 }
 
 .modal-menu {
@@ -12859,4 +12845,48 @@ input {
 .df-features-tech-list span {
   font-size: smaller;
   display: block;
+}
+
+#testimonial {
+  font-family: 'Poppins', sans-serif;
+}
+
+#testimonial h1 {
+  color: #0080B7 !important;
+  letter-spacing: 5px;
+  font-weight: 100 !important;
+}
+
+#testimonial cite {
+  font-weight: bold;
+}
+
+.quote-symbol {
+  font-family: 'Advent Pro', sans-serif;
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: 500;
+  display: block;
+  text-align: center; /* Center the quote symbol */
+  margin-bottom: 20px; /* Space between the symbol and the testimonial */
+  line-height: 1 !important;
+}
+
+.df-contact-main-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 100 !important;
+  letter-spacing: 5px;
+  color: #0080B7;
+  padding-bottom: 1rem;
+}
+
+.df-contact-sub-title {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.2rem;
+  font-weight: 400 !important;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+.df-contact-sub-title span {
+display: block;
 }
