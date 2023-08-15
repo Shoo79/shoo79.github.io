@@ -4293,6 +4293,8 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+  z-index: 1030;
+  background-color: #ffffff;
 }
 
 .navbar>.container,
@@ -12666,6 +12668,7 @@ header {
   color: #0080B7 !important;
   /* Using !important to override Bootstrap's default color */
 }
+
 
 #features h1,
 #features h2,
