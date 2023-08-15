@@ -12861,6 +12861,7 @@ input {
   color: #0080B7 !important;
   letter-spacing: 5px;
   font-weight: 100 !important;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
 }
 
 #testimonial cite {
@@ -12895,4 +12896,26 @@ input {
 
 .df-contact-sub-title span {
 display: block;
+font-size: clamp(1.0rem, 4vw, 1.2rem);
+}
+
+.btn-scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1d1d1d;  /* Or your desired color */
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.btn-scroll-top:hover {
+  background-color: #0080B7; /* Or your desired hover color */
 }
