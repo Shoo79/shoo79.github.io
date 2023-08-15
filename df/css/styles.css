@@ -12725,7 +12725,7 @@ input {
 }
 
 #footer {
-  background-color: #1d1d1d !important;
+  background-color: #0080B7 !important;
   font-family: 'Advent Pro', sans-serif !important;
 }
 
@@ -12805,10 +12805,10 @@ input {
 
 .df-header-text-container h1 span {
   color: #0080B7;
-}
+  }
 
 .df-header-text-subtitle {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   color: black;
   margin-bottom: 2rem;
@@ -12845,7 +12845,7 @@ input {
   font-family: 'Advent Pro', sans-serif !important;
   font-weight: 500 !important;
   color: #0080B7;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .df-features-tech-list span {
@@ -12866,15 +12866,16 @@ input {
 
 #testimonial cite {
   font-weight: bold;
+  font-style: normal;
 }
 
 .quote-symbol {
   font-family: 'Advent Pro', sans-serif;
-  font-size: 3rem; /* Adjust as needed */
+  font-size: 5rem; /* Adjust as needed */
   font-weight: 500;
   display: block;
   text-align: center; /* Center the quote symbol */
-  margin-bottom: 20px; /* Space between the symbol and the testimonial */
+  margin-bottom: 40px; /* Space between the symbol and the testimonial */
   line-height: 1 !important;
 }
 
