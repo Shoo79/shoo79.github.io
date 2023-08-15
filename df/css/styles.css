@@ -4324,11 +4324,25 @@ fieldset:disabled .btn {
 }
 
 .navbar-brand.logo img {
-  height: 100px;
-  /* Adjust this to your preference */
-  width: auto;
-  /* It helps keep aspect ratio */
+  width: 100%;
+  height: auto; 
+  max-width: 200px; 
 }
+
+/* Resize logo for medium screens */
+@media (max-width: 768px) {
+    .navbar-brand.logo img {
+        max-width: 150px; 
+    }
+}
+
+/* Resize logo for small screens */
+@media (max-width: 576px) {
+    .navbar-brand.logo img {
+        max-width: 100px; 
+    }
+}
+
 
 
 .navbar-nav {
@@ -12645,14 +12659,6 @@ html {
 header {
   font-family: 'Advent Pro', sans-serif;
 
-}
-
-header.bg-dark {
-  background: url('https://raw.githubusercontent.com/Shoo79/shoo79.github.io/main/df/assets/claim_1.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .navbar-brand,
