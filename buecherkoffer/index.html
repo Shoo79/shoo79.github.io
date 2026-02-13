@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bücherkoffer Nordpfalz – Empowerment & Diversität für Kinder</title>
+    <meta name="description" content="Der Bücherkoffer Nordpfalz verleiht kostenlos Bücher über Empowerment, Diversität und Kinderrechte an Schulen und Kindergärten in der Region.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">Bücherkoffer Nordpfalz</h1>
-            <nav>
-                <ul>
-                    <li><a href="#projekt">Projekt</a></li>
-                    <li><a href="#aktionen">Aktionen</a></li>
-                    <li><a href="#unterstuetzung">Unterstützung</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                    <path d="M6 16H42" stroke="currentColor" stroke-width="2.5"/>
+                    <path d="M14 22H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M14 28H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M14 34H26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="38" cy="13" r="3" fill="#f4a261"/>
+                </svg>
+                <span>Bücherkoffer Nordpfalz</span>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav" aria-label="Hauptnavigation">
+                <ul class="nav-list">
+                    <li><a href="#projekt" class="nav-link">Projekt</a></li>
+                    <li><a href="#aktionen" class="nav-link">Aktionen</a></li>
+                    <li><a href="#unterstuetzung" class="nav-link">Unterstützung</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,52 +42,203 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h2>Bücher, die Kinder stark machen</h2>
-                <p>Ein kostenloses Angebot für Schulen und Kindergärten in der Nordpfalz, um Empowerment, Diversität und Kinderrechte zugänglich zu machen.</p>
-                <a href="#projekt" class="btn">Mehr erfahren</a>
+            <div class="hero-bg">
+                <svg class="hero-pattern" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bookGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#2c7873;stop-opacity:0.15" />
+                            <stop offset="100%" style="stop-color:#f4a261;stop-opacity:0.15" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="80" r="30" fill="url(#bookGrad1)"/>
+                    <circle cx="350" cy="120" r="45" fill="url(#bookGrad1)"/>
+                    <circle cx="320" cy="320" r="35" fill="url(#bookGrad1)"/>
+                    <circle cx="80" cy="350" r="25" fill="url(#bookGrad1)"/>
+                    <rect x="60" y="200" width="20" height="60" rx="10" fill="#2c7873" opacity="0.1" transform="rotate(-15 70 230)"/>
+                    <rect x="320" y="180" width="18" height="55" rx="9" fill="#f4a261" opacity="0.15" transform="rotate(20 329 207)"/>
+                </svg>
             </div>
-        </section>
-
-        <section id="projekt" class="projekt">
-            <div class="container">
-                <h2>Unser Bücherkoffer</h2>
-                <p>Der Bücherkoffer enthält 10–15 ausgewählte Kinderbücher, die sich mit Themen wie Empowerment, Diversität und Kinderrechten befassen. Ziel ist es, diese Bücher niedrigschwellig für Kinder, pädagogische Fachkräfte und Familien zugänglich zu machen.</p>
-                <p>Der Koffer wird kostenfrei an Schulen und Kindergärten in der Region (Donnersbergkreis) verliehen und soll langfristig immer wieder eingesetzt werden können.</p>
-            </div>
-        </section>
-
-        <section id="aktionen" class="aktionen">
-            <div class="container">
-                <h2>Aktionen</h2>
-                <div class="aktion">
-                    <h3>Lesung zum Internationalen Frauentag</h3>
-                    <p>Am <strong>7. März 2026</strong> wird der Bücherkoffer erstmals im Rahmen des <em>Frauenfestes</em> in Rockenhausen vorgestellt. Organisiert vom <em>Zirkus Pepperoni</em> und den <em>Omas gegen rechts Rockenhausen</em>, gibt es erste Lesungen aus Büchern des Koffers.</p>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Bücher, die Kinder <span class="highlight">stark</span> machen</h1>
+                    <p class="hero-subtitle">Ein kostenloses Angebot für Schulen und Kindergärten in der Nordpfalz, um Empowerment, Diversität und Kinderrechte zugänglich zu machen.</p>
+                    <a href="#projekt" class="btn btn-primary">
+                        Mehr erfahren
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-illustration">
+                    <svg viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="140" cy="200" rx="120" ry="15" fill="#2c7873" opacity="0.1"/>
+                        <rect x="40" y="60" width="70" height="90" rx="4" fill="#f4a261" transform="rotate(-8 40 60"/>
+                        <rect x="45" y="65" width="60" height="80" rx="3" fill="white"/>
+                        <rect x="50" y="75" width="50" height="8" rx="2" fill="#2c7873" opacity="0.3"/>
+                        <rect x="50" y="90" width="40" height="6" rx="2" fill="#2c7873" opacity="0.2"/>
+                        <rect x="50" y="102" width="45" height="6" rx="2" fill="#2c7873" opacity="0.2"/>
+                        <rect x="50" y="114" width="35" height="6" rx="2" fill="#2c7873" opacity="0.2"/>
+                        
+                        <rect x="90" y="45" width="65" height="85" rx="4" fill="#2c7873"/>
+                        <rect x="96" y="52" width="53" height="70" rx="3" fill="white"/>
+                        <rect x="102" y="62" width="40" height="8" rx="2" fill="#2c7873"/>
+                        <rect x="102" y="77" width="35" height="6" rx="2" fill="#2c7873" opacity="0.3"/>
+                        <rect x="102" y="89" width="42" height="6" rx="2" fill="#2c7873" opacity="0.3"/>
+                        <rect x="102" y="101" width="30" height="6" rx="2" fill="#2c7873" opacity="0.3"/>
+                        
+                        <rect x="145" y="70" width="60" height="80" rx="4" fill="#f4a261" transform="rotate(5 145 70"/>
+                        <rect x="150" y="76" width="50" height="68" rx="3" fill="white"/>
+                        <rect x="155" y="85" width="38" height="7" rx="2" fill="#2c7873" opacity="0.25"/>
+                        <rect x="155" y="98" width="32" height="5" rx="2" fill="#2c7873" opacity="0.2"/>
+                        <rect x="155" y="108" width="36" height="5" rx="2" fill="#2c7873" opacity="0.2"/>
+                        <rect x="155" y="118" width="28" height="5" rx="2" fill="#2c7873" opacity="0.2"/>
+                        
+                        <circle cx="60" cy="170" r="20" fill="#2c7873" opacity="0.8"/>
+                        <circle cx="60" cy="170" r="8" fill="white"/>
+                        <circle cx="65" cy="165" r="3" fill="white" opacity="0.6"/>
+                        
+                        <circle cx="210" cy="160" r="18" fill="#f4a261" opacity="0.8"/>
+                        <circle cx="210" cy="160" r="7" fill="white"/>
+                        
+                        <path d="M130 20 Q140 10 150 20" stroke="#2c7873" stroke-width="3" fill="none" opacity="0.4"/>
+                        <path d="M120 30 Q140 5 160 30" stroke="#f4a261" stroke-width="2" fill="none" opacity="0.3"/>
+                    </svg>
                 </div>
             </div>
         </section>
 
-        <section id="unterstuetzung" class="unterstuetzung">
+        <section id="projekt" class="section projekt">
             <div class="container">
-                <h2>Unterstützen Sie unser Projekt</h2>
-                <p>Wir suchen Verlage und Privatpersonen, die unser Projekt durch Buchspenden unterstützen möchten. Aktuell suchen wir z. B. ein Exemplar des Buches <em>„Familie Weißbescheid, Stopp-Schutzschild“</em>.</p>
-                <p>Falls Sie weitere passende Bücher im Programm haben oder uns anderweitig unterstützen möchten, freuen wir uns über Ihre Nachricht!</p>
+                <div class="section-header fade-in">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="#2c7873" stroke-width="2.5"/>
+                            <path d="M8 20H56" stroke="#2c7873" stroke-width="2.5"/>
+                            <path d="M18 28H46" stroke="#2c7873" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 36H40" stroke="#2c7873" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 44H34" stroke="#2c7873" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="50" cy="16" r="4" fill="#f4a261"/>
+                        </svg>
+                    </div>
+                    <h2>Unser Bücherkoffer</h2>
+                </div>
+                <div class="projekt-content">
+                    <div class="projekt-text fade-in">
+                        <p>Der Bücherkoffer enthält <strong>10–15 ausgewählte Kinderbücher</strong>, die sich mit Themen wie Empowerment, Diversität und Kinderrechten befassen. Ziel ist es, diese Bücher niedrigschwellig für Kinder, pädagogische Fachkräfte und Familien zugänglich zu machen.</p>
+                        <p>Der Koffer wird <strong>kostenfrei</strong> an Schulen und Kindergärten in der Region (Donnersbergkreis) verliehen und soll langfristig immer wieder eingesetzt werden können.</p>
+                    </div>
+                    <div class="projekt-stats fade-in">
+                        <div class="stat-card">
+                            <span class="stat-number">10-15</span>
+                            <span class="stat-label">Bücher pro Koffer</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">kostenlos</span>
+                            <span class="stat-label">Verleih</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Regio</span>
+                            <span class="stat-label">Donnersbergkreis</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="kontakt" class="kontakt">
+        <section id="aktionen" class="section aktionen">
             <div class="container">
-                <h2>Kontakt</h2>
-                <p>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung:</p>
-                <p><strong>E-Mail:</strong> <a href="mailto:kontakt@s.duenkelberg.de">kontakt@s.duenkelberg.de</a></p>
+                <div class="section-header fade-in">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="14" width="44" height="40" rx="4" stroke="#2c7873" stroke-width="2.5"/>
+                            <path d="M10 26H54" stroke="#2c7873" stroke-width="2"/>
+                            <path d="M22 8V20" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M42 8V20" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="22" cy="35" r="4" fill="#f4a261"/>
+                            <circle cx="42" cy="35" r="4" fill="#f4a261"/>
+                            <circle cx="32" cy="46" r="3" fill="#2c7873"/>
+                        </svg>
+                    </div>
+                    <h2>Aktionen</h2>
+                </div>
+                <div class="aktion-grid">
+                    <article class="aktion-card fade-in">
+                        <div class="aktion-date">
+                            <span class="date-day">07</span>
+                            <span class="date-month">Mär</span>
+                            <span class="date-year">2026</span>
+                        </div>
+                        <div class="aktion-content">
+                            <h3>Lesung zum Internationalen Frauentag</h3>
+                            <p>Der Bücherkoffer wird erstmals im Rahmen des <strong>Frauenfestes</strong> in Rockenhausen vorgestellt. Organisiert vom <em>Zirkus Pepperoni</em> und den <em>Omas gegen rechts Rockenhausen</em>, gibt es erste Lesungen aus Büchern des Koffers.</p>
+                            <span class="aktion-location">📍 Rockenhausen</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="unterstuetzung" class="section unterstuetzung">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 58C32 58 12 48 12 32C12 20 20 14 32 14C44 14 52 20 52 32C52 48 32 58 32 58Z" stroke="#2c7873" stroke-width="2.5"/>
+                            <path d="M32 24V36" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M32 44V46" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M24 32H26" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M38 32H40" stroke="#2c7873" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h2>Unterstützen Sie unser Projekt</h2>
+                </div>
+                <div class="unterstuetzung-content fade-in">
+                    <p>Wir suchen Verlage und Privatpersonen, die unser Projekt durch <strong>Buchspenden</strong> unterstützen möchten. Aktuell suchen wir z. B. ein Exemplar des Buches <em>„Familie Weißbescheid, Stopp-Schutzschild"</em>.</p>
+                    <p>Falls Sie weitere passende Bücher im Programm haben oder uns anderweitig unterstützen möchten, freuen wir uns über Ihre Nachricht!</p>
+                    <a href="#kontakt" class="btn btn-secondary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="section kontakt">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="#2c7873" stroke-width="2.5"/>
+                            <path d="M8 20L32 36L56 20" stroke="#2c7873" stroke-width="2.5"/>
+                            <circle cx="22" cy="30" r="4" fill="#f4a261"/>
+                            <circle cx="42" cy="30" r="4" fill="#f4a261"/>
+                        </svg>
+                    </div>
+                    <h2>Kontakt</h2>
+                </div>
+                <div class="kontakt-content fade-in">
+                    <p>Für Rückfragen oder weitere Informationen stehen wir Ihnen gerne zur Verfügung:</p>
+                    <a href="mailto:kontakt@s.duenkelberg.de" class="kontakt-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 7L12 13L22 7"/>
+                        </svg>
+                        kontakt@s.duenkelberg.de
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
+    <footer class="footer">
+        <div class="container footer-inner">
             <p>&copy; 2026 Bücherkoffer Nordpfalz. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+
+    <button class="scroll-to-top" aria-label="Nach oben scrollen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
