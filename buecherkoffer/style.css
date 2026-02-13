@@ -590,6 +590,353 @@ ul {
     }
 }
 
+/* Bücher Section */
+.buecher {
+    background: white;
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--gray-color);
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.buch-card {
+    background: var(--light-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.buch-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.buch-cover {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buch-placeholder {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.buch-info {
+    padding: 1rem;
+}
+
+.buch-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 0.25rem;
+}
+
+.buch-verlag {
+    font-size: 0.85rem;
+    color: var(--gray-color);
+    margin-bottom: 0.25rem;
+}
+
+.buch-thema {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.buch-hinweis {
+    text-align: center;
+    color: var(--gray-color);
+    font-size: 0.95rem;
+}
+
+/* Über uns Section */
+.ueber-uns {
+    background: linear-gradient(180deg, var(--light-gray) 0%, white 100%);
+}
+
+.ueber-uns-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ueber-uns-content p {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    margin-bottom: 1.25rem;
+}
+
+.ueber-uns-list {
+    margin: 1.5rem 0 2rem 1.5rem;
+    list-style: disc;
+}
+
+.ueber-uns-list li {
+    font-size: 1.05rem;
+    color: var(--dark-color);
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.ueber-uns-cta {
+    background: var(--light-color);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ueber-uns-cta p {
+    margin-bottom: 1rem;
+}
+
+/* FAQ Section */
+.faq {
+    background: white;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--light-color);
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--dark-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+details[open] .faq-question::after {
+    content: '−';
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--gray-color);
+    line-height: 1.8;
+}
+
+.faq-answer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.faq-answer a:hover {
+    color: var(--primary-dark);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.footer-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-legal {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-legal p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 0.75rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Legal Pages (Impressum, Datenschutz) */
+.legal-page {
+    padding-top: 100px;
+    padding-bottom: 4rem;
+    min-height: 100vh;
+    background: #f0f0f0;
+    display: block;
+}
+
+.legal-page .legal-section {
+    background: #f0f0f0;
+    padding: 0;
+    min-height: auto;
+}
+
+.legal-page .container {
+    max-width: 800px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.legal-page .legal-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.legal-page .breadcrumb {
+    margin-bottom: 1rem;
+}
+
+.legal-page .breadcrumb a {
+    color: #2c7873;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.legal-page .breadcrumb a:hover {
+    color: #1e5552;
+    text-decoration: underline;
+}
+
+.legal-page h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    color: #2c7873;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.legal-page .legal-grid > div {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.legal-page .legal-grid h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c7873;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+.legal-page .legal-grid p {
+    color: #1a1a1a;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.legal-page .legal-grid a {
+    color: #2c7873;
+    text-decoration: underline;
+}
+
+.legal-page .legal-text h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c7873;
+    margin: 2rem 0 0.75rem;
+    text-align: left;
+}
+
+.legal-page .legal-text h2:first-of-type {
+    margin-top: 0;
+}
+
+.legal-page .legal-text p {
+    color: #1a1a1a;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.legal-page .legal-text a {
+    color: #2c7873;
+    text-decoration: underline;
+}
+
 @media (max-width: 900px) {
     .hero-content {
         grid-template-columns: 1fr;
@@ -677,5 +1024,17 @@ ul {
 
     .section h2 {
         font-size: 1.75rem;
+    }
+
+    .buch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-nav {
+        gap: 1rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.85rem;
     }
 }
