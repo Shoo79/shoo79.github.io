@@ -83,6 +83,7 @@ ul {
 .logo-icon {
     width: 40px;
     height: 40px;
+    color: var(--primary-color);
 }
 
 .nav-toggle {
@@ -313,9 +314,11 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-.section-icon svg {
+.section-icon svg,
+.section-icon img {
     width: 48px;
     height: 48px;
+    color: var(--primary-color);
 }
 
 .section h2 {
@@ -563,9 +566,11 @@ ul {
     transform: translateY(-3px);
 }
 
-.scroll-to-top svg {
+.scroll-to-top svg,
+.scroll-to-top img {
     width: 24px;
     height: 24px;
+    color: white;
 }
 
 .fade-in {
