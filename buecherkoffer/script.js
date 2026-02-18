@@ -88,4 +88,54 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
         }
     });
+
+    // Kontaktformular - AJAX Submission
+    const kontaktForm = document.getElementById('kontakt-form');
+    const formSuccess = document.getElementById('form-success');
+    const newMessageBtn = document.getElementById('new-message');
+
+    if (kontaktForm) {
+        kontaktForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = kontaktForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Wird gesendet...';
+            submitBtn.disabled = true;
+
+            try {
+                const formData = new FormData(kontaktForm);
+                
+                const response = await fetch('https://formcarry.com/s/ko3Jf-SXAtk', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Erfolgsmeldung anzeigen
+                    kontaktForm.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                    kontaktForm.reset();
+                } else {
+                    alert('Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+                }
+            } catch (error) {
+                alert('Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+
+    // "Neue Nachricht" Button
+    if (newMessageBtn && kontaktForm && formSuccess) {
+        newMessageBtn.addEventListener('click', () => {
+            formSuccess.style.display = 'none';
+            kontaktForm.style.display = 'block';
+        });
+    }
 });
