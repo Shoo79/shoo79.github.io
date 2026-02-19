@@ -138,4 +138,54 @@ document.addEventListener('DOMContentLoaded', () => {
             kontaktForm.style.display = 'block';
         });
     }
+
+    // Modal fuer Buchcover
+    const modal = document.getElementById('buch-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalVerlag = document.getElementById('modal-verlag');
+    const modalThema = document.getElementById('modal-thema');
+    const modalClose = document.getElementById('modal-close');
+
+    // Alle Buchcover klickbar machen
+    document.querySelectorAll('.buch-cover').forEach(cover => {
+        cover.addEventListener('click', () => {
+            const img = cover.querySelector('img');
+            const card = cover.closest('.buch-card');
+            const title = card.querySelector('h3').textContent;
+            const verlag = card.querySelector('.buch-verlag').textContent;
+            const thema = card.querySelector('.buch-thema').textContent;
+
+            if (img) {
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modalTitle.textContent = title;
+                modalVerlag.textContent = verlag;
+                modalThema.textContent = thema;
+                
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Modal schliessen
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 });

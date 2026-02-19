@@ -726,10 +726,18 @@ ul {
 }
 
 .buch-cover {
-    height: 140px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.buch-cover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .buch-placeholder {
@@ -1137,5 +1145,90 @@ details[open] .faq-question::after {
 
     .footer-nav a {
         font-size: 0.85rem;
+    }
+}
+
+/* Modal fuer Buchcover */
+.buch-cover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.modal-close:hover {
+    transform: scale(1.2);
+}
+
+.modal-info {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.modal-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.modal-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .modal-content img {
+        max-height: 70vh;
+    }
+    
+    .modal-close {
+        top: -35px;
+        font-size: 1.5rem;
     }
 }
